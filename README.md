@@ -1,4 +1,4 @@
-# https://profile-search-rendering.netlify.app/
+# [Link to live project](https://profile-search-rendering.netlify.app/)
 
 # Getting Started with Create React App
 
