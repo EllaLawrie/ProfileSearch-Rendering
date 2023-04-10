@@ -1,13 +1,59 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  margin: auto;
+  width: 900px;
+  gap: 10px;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #bc5188, #f7ce75) no-repeat center center /
+    cover fixed;
+}
+
+.input-field {
+  width: 100%;
+  padding: 13px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+.input-field::placeholder {
+  font-style: italic;
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.list-item {
+  list-style: none;
+  display: flex;
+  background-color: #fff;
+  padding: 15px 25px;
+  gap: 20px;
+  border-radius: 3px;
+}
+
+.profile-id {
+  font-weight: 400;
+  color: #bcbdc1;
+}
+
+.profile-name {
+  color: #8a8f98;
+  font-weight: 600;
 }

@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import ProfileSearch from './ProfileSearch'
+// import { profilesData } from './ProfilesData' // import user data
 
 function App() {
+  // const [searchQuery, setSearchQuery] = useState('') // state to store search query
+  // const filteredData = profilesData.filter(
+  //   // filter data based on search query
+  //   (user) =>
+  //     user.firstName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+  //     user.lastName.toLowerCase().includes(searchQuery.toLowerCase())
+  // )
+
+  // const handleSearch = (event) => {
+  //   // update search query on user input
+  //   setSearchQuery(event.target.value)
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <ProfileSearch />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
